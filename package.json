@@ -1,0 +1,30 @@
+{
+  "name": "konseling-backend",
+  "version": "1.0.0",
+  "description": "Backend API for BK REBT Care - Counseling Application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "build:frontend": "npm --prefix ../frontend run build",
+    "check:db": "node scripts/check-db.js",
+    "migrate": "node scripts/migrate.js",
+    "start": "node server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5",
+    "sequelize": "^6.37.5",
+    "socket.io": "^4.8.1",
+    "umzug": "^3.8.0",
+    "validator": "^13.12.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
